@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Fx Recovery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: #ff0000;
+      padding: 10px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #111;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+    button {
+      background-color: #ff0000;
+      border: none;
+      cursor: pointer;
+    }
+    .panel {
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Iron Fx Recovery</h1>
+</header>
+
+<nav>
+  <a href="#login">Iniciar Sesión</a>
+  <a href="#trading">Trading</a>
+  <a href="#deposito">Depósito</a>
+  <a href="#retiro">Retiro</a>
+</nav>
+
+<section id="login">
+  <div class="panel">
+    <h2>Login</h2>
+    <div class="form-group">
+      <label>Correo electrónico</label>
+      <input type="email" placeholder="ejemplo@correo.com">
+    </div>
+    <div class="form-group">
+      <label>Contraseña</label>
+      <input type="password" placeholder="********">
+    </div>
+    <button>Entrar</button>
+  </div>
+</section>
+
+<section id="trading">
+  <div class="panel">
+    <h2>Trading</h2>
+    <p>Aquí irá el gráfico de TradingView embebido.</p>
+    <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=es#%7B%7D" width="100%" height="300"></iframe>
+  </div>
+</section>
+
+<section id="deposito">
+  <div class="panel">
+    <h2>Depósito</h2>
+    <div class="form-group">
+      <label>Selecciona tu país</label>
+      <select>
+        <option>Colombia</option>
+        <option>Perú</option>
+        <option>México</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Monto a depositar (USD)</label>
+      <input type="number" placeholder="Ej: 100">
+    </div>
+    <button>Depositar</button>
+  </div>
+</section>
+
+<section id="retiro">
+  <div class="panel">
+    <h2>Retiro</h2>
+    <div class="form-group">
+      <label>Banco</label>
+      <input type="text" placeholder="Nombre del banco">
+    </div>
+    <div class="form-group">
+      <label>País</label>
+      <select>
+        <option>Colombia</option>
+        <option>Perú</option>
+        <option>México</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Cuenta o tarjeta</label>
+      <input type="text" placeholder="Número de cuenta o tarjeta">
+    </div>
+    <div class="form-group">
+      <label>Monto a retirar (USD)</label>
+      <input type="number" placeholder="Ej: 50">
+    </div>
+    <button>Solicitar Retiro</button>
+  </div>
+</section>
+
+</body>
+</html>
